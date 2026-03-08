@@ -1,0 +1,1 @@
+# Homotopic information gain
