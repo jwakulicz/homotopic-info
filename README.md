@@ -1,6 +1,6 @@
 # Homotopic information gain
 
-Code for our paper [Homotopic Information Gain for Sparse Active Target Tracking](https://ieeexplore.ieee.org/abstract/document/11427336), which introduces homotopic information gain, the information gained from measurements regarding a pedestrians (homotopy class). Performing information gathering/active target tracking with this measure allows for the multi-modal nature of pedestrian trajectories to be considered during planning, resulting in impressive trajectory estimation with very sparse measurement sets.
+Code for our paper [Homotopic Information Gain for Sparse Active Target Tracking](https://ieeexplore.ieee.org/abstract/document/11427336), which introduces homotopic information gain, the information gained from measurements regarding a pedestrian's *homotopy class*. Performing information gathering/active target tracking with this measure allows for the multi-modal nature of pedestrian trajectories to be considered during planning, resulting in impressive trajectory estimation with very sparse measurement sets.
 
 This repository is a minimal working example on the ATC shopping-mall pedestrian dataset. It includes a trained model, the train/test trajectories, and the scripts used to process the raw ATC data and train the model.
 
@@ -53,7 +53,6 @@ Possible reward arguments are `kl` or `ent`. To run with the homotopic informati
 
 This runs 100 test trajectories, starting at the index you give (here 0–99). Each takes on the order of a minute. For each trajectory it saves a result pickle to `results/kl_atc_<index>`, and a figure per planning step to `results_figs/`. **Create both folders before running**, or the script will fail at the first figure.
 
-Possible reward argument is `kl` (KL divergence) or `ent` (entropy).
 
 ### Evaluating results
 
